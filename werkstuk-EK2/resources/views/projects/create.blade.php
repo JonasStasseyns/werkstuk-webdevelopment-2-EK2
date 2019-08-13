@@ -10,6 +10,8 @@
 
     {{csrf_field()}}
 
+    <input type="hidden" name="user" value="{{auth()->user()->id}}">
+
     <label for="title">Project title</label>
     <input class="create-project-input" type="text" name="title" placeholder="project title" id="title">
 
