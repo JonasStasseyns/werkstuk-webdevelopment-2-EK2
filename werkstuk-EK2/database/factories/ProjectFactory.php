@@ -5,8 +5,10 @@
 use App\Model;
 use Faker\Generator as Faker;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(App\Project::class, function (Faker $faker) {
     return [
-        //
+        'title' => $faker->sentence(),
+        'description' => $faker->paragraph(rand(1, 3)),
+        'image' => $faker->imageUrl($width = 640, $height = 480)
     ];
 });
