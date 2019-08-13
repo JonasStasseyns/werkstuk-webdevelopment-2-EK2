@@ -1,25 +1,26 @@
-<!doctype html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Create project</h1>
+@extends('layout')
 
-    <form action="/projects" method="post">
+@section('content')
 
-        {{csrf_field()}}
+<p class="bread"><a href="/">projects</a> > <a href="">create</a></p>
 
-        <input type="text" name="name" placeholder="project name">
+<h1 class="create-project-h1">Create project</h1>
 
-        <input type="text" name="password" placeholder="password">
+<form action="/projects" method="post">
 
-        <input type="submit" value="submit">
+    {{csrf_field()}}
 
-    </form>
-</body>
-</html>
+    <label for="title">Project title</label>
+    <input class="create-project-input" type="text" name="title" placeholder="project title" id="title">
+
+    <label for="description">Project description</label>
+    <textarea class="create-project-textarea" name="description" placeholder="description" id="description"></textarea>
+
+    <label for="image">Project image</label>
+    <input class="create-project-input" type="text" name="image" placeholder="project title" id="image">
+
+    <input class="create-project-submit" type="submit" value="submit">
+
+</form>
+
+@endsection

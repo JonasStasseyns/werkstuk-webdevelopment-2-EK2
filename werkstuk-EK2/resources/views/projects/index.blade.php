@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-    @foreach ($projects as $project)
+@extends('layout')
 
-        <h2>{{$project->username}}</h2>
-        <p>{{$project->password}}</p>
+@section('content')
+    <div class="projects-list-container">
+        <p class="bread"><a href="/">projects</a> > <a href="">index</a></p>
+        @foreach($projects as $project)
+            <div class="projects-list-card">
+                <img class="project-list-img" src="{{$project->image}}">
+                <h3 class="featured-title">{{$project->title}}</h3>
+                <p class="project-list-text">{{$project->description}}</p>
+                <a href=""><button class="featured-rm">Read More</button></a>
 
-    @endforeach
-</body>
-</html>
+            </div>
+        @endforeach
+    </div>
+
+@endsection

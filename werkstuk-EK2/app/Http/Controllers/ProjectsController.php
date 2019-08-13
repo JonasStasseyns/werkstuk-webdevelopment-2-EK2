@@ -21,11 +21,18 @@ class ProjectsController extends Controller
 
     }
 
+    public function homepage() {
+        $projects = Project::all();
+
+        return view('welcome', compact('projects'));
+    }
+
     public function store() {
 
         $project = new Project;
-        $project->username = request('name');
-        $project->password = request('password');
+        $project->title = request('title');
+        $project->description = request('description');
+        $project->image = request('image');
         $project->save();
 
         return redirect('/projects');
