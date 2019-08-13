@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfa0d112-d036-4455-997d-c92a6d01cb8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/auth.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/ProjectsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/database/factories/ProjectFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/database/factories/ProjectFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/app.sass" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/app.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/home.sass" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/home.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/partials/nav.sass" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/partials/nav.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/views/home.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/views/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/views/partials/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/views/partials/nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/views/projects/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/views/projects/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="dfa0d112-d036-4455-997d-c92a6d01cb8c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/werkstuk-EK2/database/factories/ProjectFactory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+            <state relative-caret-position="253">
+              <caret line="11" column="64" lean-forward="true" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
               <folding>
                 <element signature="e#67#81#0#PHP" expanded="true" />
               </folding>
@@ -465,18 +449,17 @@
       <workItem from="1565362812806" duration="3716000" />
       <workItem from="1565452308923" duration="2445000" />
       <workItem from="1565625586759" duration="7483000" />
-      <workItem from="1565711058410" duration="11435000" />
+      <workItem from="1565711058410" duration="11766000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25079000" />
+    <option name="totallyTimeSpent" value="25410000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49810606" visible="true" weight="0.26037195" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49810606" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" sideWeight="0.50189394" side_tool="true" weight="0.26037195" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -489,7 +472,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3043478" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3043478" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -696,8 +679,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/werkstuk-EK2/database/factories/ProjectFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        <state relative-caret-position="253">
+          <caret line="11" column="64" lean-forward="true" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
           <folding>
             <element signature="e#67#81#0#PHP" expanded="true" />
           </folding>
