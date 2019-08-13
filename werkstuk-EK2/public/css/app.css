@@ -33,8 +33,10 @@
 
 .featured-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 5vh 0;
+  border-left: 1px solid #B3B6B7;
+  padding-left: 1vw;
 }
 
 .featured-img {
@@ -42,7 +44,7 @@
 }
 
 .featured-text {
-  width: 50%;
+  width: 90%;
 }
 
 .featured-rm {
@@ -103,6 +105,17 @@
   border-radius: 1px;
   border: none;
   text-transform: uppercase;
+}
+
+.form-control {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.loginform {
+  width: 50%;
+  margin: 10vh auto;
+  background-color: #F0F1F5;
 }
 
 * {

@@ -15,3 +15,10 @@ Route::get('/', 'ProjectsController@homepage');
 Route::get('/projects', 'ProjectsController@index');
 Route::get('/projects/create', 'ProjectsController@create');
 Route::post('/projects/', 'ProjectsController@store');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
