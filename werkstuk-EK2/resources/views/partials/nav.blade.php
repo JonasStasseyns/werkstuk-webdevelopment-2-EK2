@@ -3,7 +3,12 @@
     <ul class="links">
         <li><a href="/">home</a></li>
         <li><a href="/projects">projects</a></li>
-        <li><a href="/projects/create">create project</a></li>
+
+        <!-- If user is logged in show create projects link -->
+        @if (Auth::check())
+            <li><a href="/projects/create">create project</a></li>
+        @endif
+
         @guest
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
