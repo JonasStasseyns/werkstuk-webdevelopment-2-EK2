@@ -2,8 +2,18 @@
 
 @section('content')
     <div class="account-info-panel">
-        <h2 class="user-name">{{auth()->user()->name}}</h2>
-        <p class="user-email">{{auth()->user()->email}}</p>
+        <div class="account-info-image-container">
+            <img class="account-image" src="{{asset('storage/'.auth()->user()->image)}}">
+            <form action="/account" method="post" enctype="multipart/form-data">
+                {{csrf_field()}}
+                <input class="create-project-input" type="file" name="image" placeholder="change picture" id="image">
+                <input class="create-project-submit" type="submit" value="Update">
+            </form>
+        </div>
+        <div class="account-info-text-container">
+            <h2 class="user-name">{{auth()->user()->name}}</h2>
+            <p class="user-email">{{auth()->user()->email}}</p>
+        </div>
     </div>
     @foreach($projects as $project)
         <div class="projects-list-card">
@@ -11,7 +21,6 @@
             <h3 class="featured-title">{{$project->title}}</h3>
             <p class="project-list-text">{{$project->description}}</p>
             <a href=""><button class="featured-rm">Read More</button></a>
-
         </div>
     @endforeach
 @endsection

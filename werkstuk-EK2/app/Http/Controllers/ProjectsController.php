@@ -32,8 +32,10 @@ class ProjectsController extends Controller
         $project = new Project;
         $project->title = request('title');
         $project->description = request('description');
-        $project->image = request('image');
+        $project->image = request()->image->store('uploads', 'public');
+        $project->user = request('user');
         $project->save();
+
 
         return redirect('/projects');
 

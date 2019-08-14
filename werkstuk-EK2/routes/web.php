@@ -24,3 +24,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/account', 'AccountController@index');
+Route::post('/account', 'AccountController@updateImage');
