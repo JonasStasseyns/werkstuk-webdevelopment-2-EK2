@@ -3,7 +3,8 @@
 @section('content')
     <div class="account-info-panel">
         <div class="account-info-image-container">
-            <img class="account-image" src="{{asset('storage/'.auth()->user()->image)}}">
+            {{--<img class="account-image" src="{{asset('storage/'.auth()->user()->image)}}">--}}
+            <img class="account-image" src="{{auth()->user()->image}}">
             <form action="/account" method="post" enctype="multipart/form-data">
                 {{csrf_field()}}
                 <input class="update-image-incput" type="file" name="image" placeholder="change picture" id="image">

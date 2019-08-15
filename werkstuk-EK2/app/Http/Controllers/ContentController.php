@@ -27,4 +27,8 @@ class ContentController extends Controller
 
         return view('contact', ['sent' => true]);
     }
+
+    public function news(){
+
+    }
 }
