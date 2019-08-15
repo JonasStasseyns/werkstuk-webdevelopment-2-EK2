@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfa0d112-d036-4455-997d-c92a6d01cb8c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/AccountController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/ContentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/ContentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/app.sass" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/app.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_contact.sass" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_contact.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/views/account.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/views/account.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/views/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/views/partials/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/views/partials/nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="dfa0d112-d036-4455-997d-c92a6d01cb8c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -429,12 +418,12 @@
       <workItem from="1565797301185" duration="5190000" />
       <workItem from="1565811272951" duration="144000" />
       <workItem from="1565812080824" duration="4000" />
-      <workItem from="1565866446416" duration="11069000" />
+      <workItem from="1565866446416" duration="11363000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45353000" />
+    <option name="totallyTimeSpent" value="45647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="0" />
