@@ -17,4 +17,8 @@ class ContentController extends Controller
         return view('privacypolicy', compact('privacy'));
 //        dd($privacy);
     }
+
+    public function contact(){
+
+    }
 }
