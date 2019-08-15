@@ -13,9 +13,13 @@
 
 Route::get('/', 'ProjectsController@homepage');
 Route::get('/projects', 'ProjectsController@index');
+Route::get('/projects/{id}', ['uses' =>'ProjectsController@detail']);
 Route::get('/projects/create', 'ProjectsController@create');
 Route::post('/projects/', 'ProjectsController@store');
 Auth::routes();
+
+Route::get('/news', 'NewsController@index');
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 

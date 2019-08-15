@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Project;
+use Illuminate\Support\Facades\DB;
 
 class ProjectsController extends Controller
 {
@@ -13,6 +14,13 @@ class ProjectsController extends Controller
          $projects = Project::paginate(10);
 
          return view('projects.index', compact('projects'));
+    }
+
+    public function detail($id){
+        $project = DB::table('projects')->where('id', $id)->first();
+
+        // Make detailpage view
+        dd($project);
     }
 
     public function create() {
