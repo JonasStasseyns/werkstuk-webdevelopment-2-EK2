@@ -21,5 +21,7 @@ class AccountController extends Controller
         $user = Auth::user();
         $user->image = $image;
         $user->save();
+
+        return redirect('/account');
     }
 }

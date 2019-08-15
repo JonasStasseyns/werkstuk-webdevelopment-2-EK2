@@ -2,6 +2,9 @@
 
 @section('content')
 <div class="contact-form-container">
+    @if ($sent)
+        <p class="sent-confirmation">Your message has been sent.</p>
+    @endif
     <form class="contact-form" method="post" action="/contact">
         {{csrf_field()}}
 

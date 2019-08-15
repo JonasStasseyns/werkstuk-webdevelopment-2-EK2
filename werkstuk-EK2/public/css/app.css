@@ -191,6 +191,11 @@
   color: #F0F1F5;
 }
 
+.sent-confirmation {
+  color: #58D68D;
+  margin-bottom: 3vh;
+}
+
 * {
   color: #212F3C;
   font-family: "Open Sans", sans-serif;
@@ -238,5 +243,7 @@ h2 {
   background-color: white;
   border-radius: 1px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 0;
 }
 
