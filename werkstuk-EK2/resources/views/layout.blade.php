@@ -16,6 +16,8 @@
             @yield('content')
         </div>
     </div>
--- end --
+<footer class="general-footer">
+    <a href="/privacypolicy">Privacy Policy</a>
+</footer>
 </body>
 </html>

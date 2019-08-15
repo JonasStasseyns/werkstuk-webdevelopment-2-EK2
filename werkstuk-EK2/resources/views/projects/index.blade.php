@@ -7,7 +7,7 @@
             <div class="projects-list-card">
                 {{--<img class="project-list-img" src="{{asset('storage/'.$project->image)}}" alt="{{$project->image}}">--}}
                 <img class="project-list-img" src="{{$project->image}}" alt="{{$project->image}}">
-                <h3 class="featured-title">{{$project->title}}</h3>
+                <h3 class="project-list-title">{{$project->title}}</h3>
                 <p class="project-list-text">{{$project->description}}</p>
                 <a href="">
                     <button class="featured-rm">Read More</button>

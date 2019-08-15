@@ -22,7 +22,7 @@ class ProjectsController extends Controller
     }
 
     public function homepage() {
-        $projects = Project::all();
+        $projects = Project::limit(2)->get();
 
         return view('welcome', compact('projects'));
     }
