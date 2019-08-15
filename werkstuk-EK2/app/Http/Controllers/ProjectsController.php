@@ -19,8 +19,7 @@ class ProjectsController extends Controller
     public function detail($id){
         $project = DB::table('projects')->where('id', $id)->first();
 
-        // Make detailpage view
-        dd($project);
+        return view('projects.detail', compact('project'));
     }
 
     public function create() {
