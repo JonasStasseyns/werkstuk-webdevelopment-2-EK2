@@ -6,7 +6,7 @@
             <img class="account-image" src="{{asset('storage/'.auth()->user()->image)}}">
             <form action="/account" method="post" enctype="multipart/form-data">
                 {{csrf_field()}}
-                <input class="create-project-input" type="file" name="image" placeholder="change picture" id="image">
+                <input class="update-image-input" type="file" name="image" placeholder="change picture" id="image">
                 <input class="create-project-submit" type="submit" value="Update">
             </form>
         </div>

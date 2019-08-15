@@ -135,6 +135,38 @@
      object-fit: cover;
 }
 
+.purchase-credits-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.purchase-credits-option-container {
+  margin: 3vh 0;
+}
+
+.save-amount {
+  color: #58D68D;
+  text-align: right;
+}
+
+.buy-title {
+  margin-bottom: 2vh;
+}
+
+.buy-price {
+  text-align: right;
+}
+
+.buy-credits {
+  width: 100%;
+  background-color: #212F3C;
+  color: #F0F1F5;
+  border: none;
+  margin-top: 3vh;
+  padding: 0.5vw 2vw;
+}
+
 * {
   color: #212F3C;
   font-family: "Open Sans", sans-serif;

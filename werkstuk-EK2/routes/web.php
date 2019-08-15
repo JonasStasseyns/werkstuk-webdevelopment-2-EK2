@@ -29,3 +29,6 @@ Route::post('/account', 'AccountController@updateImage');
 Route::get('/about', 'ContentController@about');
 
 Route::get('/privacypolicy', 'ContentController@privacy');
+
+Route::get('/credits', 'CreditsController@index');
+Route::get('/credits/buy/{amount}', ['uses' =>'CreditsController@purchase']);
