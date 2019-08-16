@@ -16,6 +16,7 @@
             <p class="user-email">{{auth()->user()->email}}</p>
         </div>
     </div>
+    <h2>Your projects</h2>
     @foreach($projects as $project)
         <div class="projects-list-card">
             <img class="project-list-img" src="{{$project->image}}" alt="{{$project->image}}">

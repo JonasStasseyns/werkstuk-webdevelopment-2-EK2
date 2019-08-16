@@ -39,3 +39,4 @@ Route::get('/credits', 'CreditsController@index');
 Route::get('/credits/buy/{amount}', ['uses' =>'CreditsController@purchase']);
 
 Route::get('/donate/{id}', ['uses' => 'DonationsController@index']);
+Route::get('/donate/{id}/{amount}', ['uses' => 'DonationsController@donate']);

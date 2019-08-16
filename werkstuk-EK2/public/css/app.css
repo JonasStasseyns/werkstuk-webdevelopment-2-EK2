@@ -88,6 +88,11 @@
   text-overflow: ellipsis;
 }
 
+.percent-funded {
+  color: #58D68D;
+  margin-bottom: 1vh;
+}
+
 .create-project-input {
   width: 50%;
   display: block;
@@ -238,6 +243,7 @@
   padding-right: 1vh;
   box-sizing: border-box;
   text-align: right;
+  max-width: 100%;
 }
 
 .donate-benefits-ul {

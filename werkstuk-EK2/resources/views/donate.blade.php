@@ -21,7 +21,7 @@
             <ul class="donate-benefits-ul">
                 <li>1 product or ticket</li>
             </ul>
-            <a href="/credits/buy/10" class="buy-credits-link">
+            <a href="/donate/{{$project->id}}/10" class="buy-credits-link">
                 <button class="buy-credits">Donate</button>
             </a>
         </div>
