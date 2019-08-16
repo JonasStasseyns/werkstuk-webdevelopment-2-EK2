@@ -21,7 +21,7 @@
             <ul class="donate-benefits-ul">
                 <li>1 product or ticket</li>
             </ul>
-            <a href="/donate/{{$project->id}}/10" class="buy-credits-link">
+            <a href="/donate/{{$project->id}}/20" class="buy-credits-link">
                 <button class="buy-credits">Donate</button>
             </a>
         </div>
@@ -32,7 +32,7 @@
                 <li>1 premium-product or ticket</li>
                 <li>1 hardcover manual</li>
             </ul>
-            <a href="/credits/buy/25" class="buy-credits-link">
+            <a href="/donate/{{$project->id}}/50" class="buy-credits-link">
                 <button class="buy-credits">Donate</button>
             </a>
         </div>
@@ -44,10 +44,23 @@
                 <li>1 hardcover manual</li>
                 <li>1 DLC or accessory</li>
             </ul>
-            <a href="/credits/buy/50" class="buy-credits-link">
+            <a href="/donate/{{$project->id}}/100" class="buy-credits-link">
                 <button class="buy-credits">Donate</button>
             </a>
         </div>
-
+        @if ($project->donated)
+            <div class="overlay">
+                <div class="modal">
+                    <h3>Thank you for your donation!</h3><br>
+                    <p>Your donation was received successfully. You will be sent a confirmation email.</p>
+                    <a href="/" class="buy-credits-link">
+                        <button class="buy-credits">Home</button>
+                    </a>
+                    <a href="/projects/{{$project->id}}" class="buy-credits-link">
+                        <button class="buy-credits">Project page</button>
+                    </a>
+                </div>
+            </div>
+        @endif
     </div>
 @endsection

@@ -10,6 +10,7 @@ class DonationsController extends Controller
 {
     public function index($id) {
         $project = DB::table('projects')->where('id', $id)->first();
+        $project->donated = false;
         return view('donate', compact('project'));
     }
 
@@ -17,9 +18,12 @@ class DonationsController extends Controller
         if(Auth::user()->credits >= $amount) {
             $project = DB::table('projects')->where('id', $id)->first();
             Auth::user()->credits -= $amount;
+            Auth::user()->save();
             $current = $project->current + $amount;
+            $project->current += $amount;
             DB::table('projects')->where('id', $id)->update(['current' => $current]);
-            return redirect('/donate/'.$id);
+            $project->donated = true;
+            return view('donate', compact('project'));
         }
     }
 }
