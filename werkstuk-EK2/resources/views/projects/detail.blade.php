@@ -4,7 +4,7 @@
     <div class="featured-container">
         <div class="featured-content">
             <h1 class="featured-title">{{$project->title}}</h1>
-            <p class="featured-text">{{$project->description}}</p>
+            <p class="featured-text detail-content">{!! $project->content !!}</p>
         </div>
         <div class="right">
             <img class="featured-img" src="{{$project->image}}">

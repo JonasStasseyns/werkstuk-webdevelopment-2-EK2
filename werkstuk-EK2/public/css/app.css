@@ -45,6 +45,9 @@
 
 .featured-text {
   width: 90%;
+  max-height: 31vh;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .featured-rm {
@@ -207,6 +210,10 @@
   background-color: #212F3C;
   color: #F0F1F5;
   font-size: 1em;
+}
+
+.detail-content {
+  overflow: visible;
 }
 
 * {
