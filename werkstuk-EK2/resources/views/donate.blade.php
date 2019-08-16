@@ -48,7 +48,20 @@
                 <button class="buy-credits">Donate</button>
             </a>
         </div>
-        @if ($project->donated)
+        @if($project->notenough)
+            <div class="overlay">
+                <div class="modal">
+                    <h3>Sorry! You don't have enough credits!</h3><br>
+                    <p>You can purchase credits or go back to the homepage.</p>
+                    <a href="/credits" class="buy-credits-link">
+                        <button class="buy-credits">Purchase credits</button>
+                    </a>
+                    <a href="/" class="buy-credits-link">
+                        <button class="buy-credits">Homepage</button>
+                    </a>
+                </div>
+            </div>
+        @elseif($project->donated)
             <div class="overlay">
                 <div class="modal">
                     <h3>Thank you for your donation!</h3><br>

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfa0d112-d036-4455-997d-c92a6d01cb8c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/DonationsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/DonationsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_donate.sass" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_donate.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/views/donate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/views/donate.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/views/donate.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="361">
+              <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
               <folding>
                 <element signature="e#489#548#0#HTML" expanded="true" />
               </folding>
@@ -66,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/DonationsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+            <state relative-caret-position="397">
+              <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -149,8 +146,8 @@
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/views/account.blade.php" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/routes/web.php" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_donate.sass" />
-        <option value="$PROJECT_DIR$/werkstuk-EK2/resources/views/donate.blade.php" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/DonationsController.php" />
+        <option value="$PROJECT_DIR$/werkstuk-EK2/resources/views/donate.blade.php" />
       </list>
     </option>
   </component>
@@ -398,12 +395,12 @@
       <workItem from="1565812080824" duration="4000" />
       <workItem from="1565866446416" duration="14629000" />
       <workItem from="1565889220181" duration="2214000" />
-      <workItem from="1565954517297" duration="13405000" />
+      <workItem from="1565954517297" duration="13770000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64532000" />
+    <option name="totallyTimeSpent" value="64897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="0" />
@@ -771,22 +768,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/views/donate.blade.php">
+    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/DonationsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="397">
+          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
           <folding>
-            <element signature="e#489#548#0#HTML" expanded="true" />
+            <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/DonationsController.php">
+    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/views/donate.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        <state relative-caret-position="361">
+          <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
           <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="e#489#548#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

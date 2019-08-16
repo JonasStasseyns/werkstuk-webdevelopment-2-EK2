@@ -11,6 +11,7 @@ class DonationsController extends Controller
     public function index($id) {
         $project = DB::table('projects')->where('id', $id)->first();
         $project->donated = false;
+        $project->notenough = false;
         return view('donate', compact('project'));
     }
 
@@ -23,6 +24,11 @@ class DonationsController extends Controller
             $project->current += $amount;
             DB::table('projects')->where('id', $id)->update(['current' => $current]);
             $project->donated = true;
+            $project->notenough = false;
+            return view('donate', compact('project'));
+        }else{
+            $project = DB::table('projects')->where('id', $id)->first();
+            $project->notenough = true;
             return view('donate', compact('project'));
         }
     }
