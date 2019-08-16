@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfa0d112-d036-4455-997d-c92a6d01cb8c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/DonationsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/DonationsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/views/donate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/views/donate.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="dfa0d112-d036-4455-997d-c92a6d01cb8c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +27,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/views/donate.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
@@ -66,11 +63,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/DonationsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
+            <state relative-caret-position="374">
               <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/werkstuk-EK2/database/migrations/2019_08_16_180626_create_comments_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -97,7 +103,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/projectcreate.sass" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/sass/partials/nav.sass" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/views/layouts/app.blade.php" />
@@ -148,6 +153,7 @@
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_donate.sass" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/DonationsController.php" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/views/donate.blade.php" />
+        <option value="$PROJECT_DIR$/werkstuk-EK2/database/migrations/2019_08_16_180626_create_comments_table.php" />
       </list>
     </option>
   </component>
@@ -395,18 +401,18 @@
       <workItem from="1565812080824" duration="4000" />
       <workItem from="1565866446416" duration="14629000" />
       <workItem from="1565889220181" duration="2214000" />
-      <workItem from="1565954517297" duration="13770000" />
+      <workItem from="1565954517297" duration="14451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64897000" />
+    <option name="totallyTimeSpent" value="65578000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49810606" visible="true" weight="0.24749643" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49810606" visible="true" weight="0.24749643" />
       <window_info id="Structure" order="1" sideWeight="0.50189394" side_tool="true" weight="0.26037195" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -419,7 +425,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3030303" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.27799737" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -432,7 +438,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/storage/app/public/uploads/PJVdecgalCBkPkKeMaUQsv7M7u5yJKDIQ6QA2bJC.png" />
     <entry file="file://$PROJECT_DIR$/werkstuk-EK2/storage/app/public/uploads/spLTzhRFZR21oOuFb7TdIBheHgGjLJPdm2XFQe1j.png" />
     <entry file="file://$PROJECT_DIR$/werkstuk-EK2/storage/app/public/uploads/SSGgbrbnxmr6ruBmzFPqCPLp0tgIs7tYHNlETExA.png" />
     <entry file="file://$PROJECT_DIR$/werkstuk-EK2/storage/app/public/uploads/w8opymgN2N2ZjOnv9K260WjK3Q3DsBAoSpRUHzVV.png" />
@@ -768,16 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/DonationsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/views/donate.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -788,5 +783,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/DonationsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/database/migrations/2019_08_16_180626_create_comments_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
