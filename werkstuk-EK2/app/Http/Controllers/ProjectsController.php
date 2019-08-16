@@ -11,7 +11,7 @@ class ProjectsController extends Controller
     //
 
     public function index() {
-         $projects = Project::paginate(10);
+         $projects = Project::paginate(9);
 
          return view('projects.index', compact('projects'));
     }
@@ -38,7 +38,9 @@ class ProjectsController extends Controller
 
         $project = new Project;
         $project->title = request('title');
+        $project->target = request('target');
         $project->description = request('description');
+        $project->content = request('content');
         $project->image = request()->image->store('uploads', 'public');
         $project->user = request('user');
         $project->save();

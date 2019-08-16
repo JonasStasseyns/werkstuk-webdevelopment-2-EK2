@@ -6,7 +6,7 @@
 
         <!-- If user is logged in show create projects link -->
         @if (Auth::check())
-            <li><a href="/projects/create">create project</a></li>
+            <li><a href="/create-project">create project</a></li>
         @endif
         <li class="nav-item">
             <a class="nav-link" href="/contact">contact</a>

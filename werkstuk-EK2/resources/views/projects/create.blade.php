@@ -13,10 +13,16 @@
     <input type="hidden" name="user" value="{{ Auth::user()->id }}">
 
     <label for="title">Project title</label>
-    <input class="create-project-input" type="text" name="title" placeholder="project title" id="title">
+    <input class="create-project-input" type="text" name="title" placeholder="Project title" id="title">
+
+    <label for="title">Project target</label>
+    <input class="create-project-input" type="number" name="target" placeholder="Project target" id="title">
+
+    <label for="description">Short project description</label>
+    <textarea class="create-project-textarea" name="description" placeholder="Short description" id="description"></textarea>
 
     <label for="description">Project description</label>
-    <textarea class="create-project-textarea" name="description" placeholder="description" id="description"></textarea>
+    <textarea class="create-project-textarea" name="content" placeholder="Description" id="description"></textarea>
 
     <label for="image">Project image</label>
     <input class="create-project-input" type="file" name="image" placeholder="project title" id="image">

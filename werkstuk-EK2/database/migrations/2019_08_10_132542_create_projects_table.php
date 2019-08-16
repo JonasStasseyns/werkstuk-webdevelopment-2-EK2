@@ -21,6 +21,8 @@ class CreateProjectsTable extends Migration
             $table->longText('content');
             $table->string('image');
             $table->integer('user');
+            $table->integer('target');
+            $table->integer('current')->default(0);
         });
     }
 

@@ -146,6 +146,10 @@
 
 .purchase-credits-option-container {
   margin: 3vh 0;
+  width: 20%;
+  padding: 2vw;
+  border-left: 1px solid #E5E7E9;
+  border-right: 1px solid #E5E7E9;
 }
 
 .save-amount {
@@ -168,6 +172,10 @@
   border: none;
   margin-top: 3vh;
   padding: 0.5vw 2vw;
+}
+
+.buy-credits {
+  font-size: 1em;
 }
 
 .contact-form {
@@ -214,6 +222,36 @@
 
 .detail-content {
   overflow: visible;
+}
+
+.progress-parent {
+  margin-top: 2vh;
+  width: 100%;
+  height: 4vh;
+  border: 1px solid #E5E7E9;
+}
+
+.progress {
+  background-color: #58D68D;
+  height: 100%;
+  padding-top: 0.5vh;
+  padding-right: 1vh;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.donate-benefits-ul {
+  min-height: 10vh;
+}
+
+.funding-status {
+  display: flex;
+  justify-content: space-between;
+  padding: 5vh 0;
+}
+
+.progress-container {
+  min-width: 50vw;
 }
 
 * {
