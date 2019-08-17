@@ -69,6 +69,7 @@
                     @else
                         <a href=""><button class="donate-submit">This is your project</button></a>
                         <a href="/projects/edit/{{$project->id}}"><button class="donate-submit">Edit project</button></a>
+                        <a href="/projects/donations/{{$project->id}}"><button class="donate-submit">Donation list</button></a>
                     @endif
                 @else
                     <a href="/login"><button class="donate-submit">Log in to donate</button></a>

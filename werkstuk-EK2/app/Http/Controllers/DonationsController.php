@@ -21,6 +21,8 @@ class DonationsController extends Controller
             $project = DB::table('projects')->where('id', $id)->first();
             Auth::user()->credits -= $amount;
             Auth::user()->save();
+            $or = $amount;
+            $amount = $amount*0.9;
             $current = $project->current + $amount;
             $project->current += $amount;
             DB::table('projects')->where('id', $id)->update(['current' => $current]);
@@ -32,12 +34,17 @@ class DonationsController extends Controller
             $donation->credits = $amount;
             $donation->project_id = $id;
             $donation->save();
-
             return view('donate', compact('project'));
         }else{
             $project = DB::table('projects')->where('id', $id)->first();
             $project->notenough = true;
             return view('donate', compact('project'));
         }
+    }
+
+    public function donationList($id){
+        $donations = DB::table('donations')->select('users.name', 'donations.credits')->join('users', 'donations.user_id', '=', 'users.id')->where('project_id', '=', $id)->get();
+
+        return view('projects.donationlist', compact('donations'));
     }
 }

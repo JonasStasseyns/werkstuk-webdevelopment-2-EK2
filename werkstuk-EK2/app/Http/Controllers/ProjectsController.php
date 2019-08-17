@@ -65,12 +65,13 @@ class ProjectsController extends Controller
         ];
 
         if(request()->hasFile('image')){
+            dd('HASFILE YESS');
             $project['image'] = request()->image->store('uploads', 'public');
         }
 
         DB::table('projects')->where('id', request('id'))->update($project);
 
-        return redirect('/projects/'.request('id'));
+//        return redirect('/projects/'.request('id'));
     }
 
     public function store()

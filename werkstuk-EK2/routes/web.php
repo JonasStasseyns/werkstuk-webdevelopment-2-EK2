@@ -45,5 +45,6 @@ Route::get('/credits/buy/{amount}', ['uses' =>'CreditsController@purchase']);
 
 Route::get('/donate/{id}', ['uses' => 'DonationsController@index']);
 Route::get('/donate/{id}/{amount}', ['uses' => 'DonationsController@donate']);
+Route::get('/projects/donations/{id}', ['uses' => 'DonationsController@donationList']);
 
 Route::post('/comment/{type}/{id}', ['uses' => 'CommentsController@comment']);
