@@ -9,7 +9,7 @@
             <h3 class="project-list-title">{{$new->title}}</h3>
             <p class="project-list-text">{{$new->text}}</p>
             <a href="">
-                <button class="featured-rm">Read More</button>
+                <a href="/news/{{$new->id}}"><button class="featured-rm">Read More</button></a>
             </a>
 
         </div>

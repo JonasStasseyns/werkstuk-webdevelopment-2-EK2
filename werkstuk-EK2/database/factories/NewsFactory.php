@@ -9,7 +9,7 @@ use App\News;
 $factory->define(News::class, function (Faker $faker) {
     return [
         'title' => $faker->sentence(),
-        'text' => $faker->paragraphs(rand(10, 20)),
+        'text' => nl2br($faker->paragraphs(rand(5, 10), true)),
         'image' => $faker->imageUrl($width = 1200, $height = 480),
     ];
 });

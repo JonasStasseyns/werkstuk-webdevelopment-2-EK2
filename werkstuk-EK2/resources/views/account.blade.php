@@ -39,7 +39,7 @@
                     <div class="your-project"><a href="/projects/{{$donation->id}}">{{$donation->title}}</a><p>{{$donation->credits}}</p></div>
                 @endforeach
             @else
-                <br><br><p>You don't have any projects.</p>
+                <br><br><p>You don't have any donations.</p>
             @endif
         </div>
     </div>

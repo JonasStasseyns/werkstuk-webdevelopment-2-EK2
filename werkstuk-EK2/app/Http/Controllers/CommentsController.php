@@ -15,6 +15,6 @@ class CommentsController extends Controller
         $comment->content_id = $id;
         $comment->comment = request('comment');
         $comment->save();
-        return redirect('/projects/'.$id);
+        return redirect('/'.$type.'/'.$id);
     }
 }
