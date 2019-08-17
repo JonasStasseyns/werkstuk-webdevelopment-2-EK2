@@ -18,8 +18,12 @@ class ProjectsController extends Controller
 
     public function detail($id){
         $project = DB::table('projects')->where('id', $id)->first();
+        $comments = DB::table('comments')->where([
+            ['content_type', '=', 'project'],
+            ['content_id', '=', $id],
+        ])->get();
 
-        return view('projects.detail', compact('project'));
+        return view('projects.detail', compact(['project', 'comments']));
     }
 
     public function create() {

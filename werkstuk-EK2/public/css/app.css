@@ -25,6 +25,11 @@
   padding-bottom: 0.5vh;
 }
 
+.user-name-nav {
+  font-variant-caps: all-small-caps;
+  font-weight: bolder;
+}
+
 .section {
   border-radius: 1px;
   margin: 15vh 0;
@@ -227,6 +232,43 @@
 
 .detail-content {
   overflow: visible;
+  max-height: none;
+}
+
+.comment-ta {
+  margin: 2vh 0;
+  padding: 1vw;
+  height: 10vh;
+  box-sizing: border-box;
+  width: 90%;
+  border-color: #F0F1F5;
+}
+
+.comment-submit {
+  border: 0;
+  background-color: #212F3C;
+  color: #F0F1F5;
+  padding: 1vw;
+  height: 10vh;
+  box-sizing: border-box;
+  width: 10%;
+}
+
+.comment-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment-username {
+  background-color: #212F3C;
+  color: #F0F1F5;
+  font-variant-caps: all-small-caps;
+  padding: 0.2vh 1vh 0.4vh 1vh;
+}
+
+.comment-line {
+  margin-bottom: 1vh;
 }
 
 .progress-parent {
