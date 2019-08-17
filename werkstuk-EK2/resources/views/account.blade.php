@@ -34,9 +34,9 @@
         </div>
         <div class="your-donations-list">
             <h2>Your donations</h2>
-            @if(!$projects->isEmpty())
-                @foreach($projects as $project)
-                    <div class="your-project"><a href="/projects/{{$project->id}}">{{$project->title}}</a></div>
+            @if(!$donations->isEmpty())
+                @foreach($donations as $donation)
+                    <div class="your-project"><a href="/projects/{{$donation->id}}">{{$donation->title}}</a><p>{{$donation->credits}}</p></div>
                 @endforeach
             @else
                 <br><br><p>You don't have any projects.</p>

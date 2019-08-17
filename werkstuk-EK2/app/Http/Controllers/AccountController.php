@@ -5,14 +5,16 @@ namespace App\Http\Controllers;
 use App\Project;
 use App\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class AccountController extends Controller
 {
     public function index() {
 
         $projects = Project::all()->where('user', '=', Auth::user()->id);
+        $donations = DB::table('donations')->select('projects.title', 'donations.credits', 'projects.id')->join('projects', 'projects.id', '=', 'donations.project_id')->get();
 
-        return view('account', compact('projects'));
+        return view('account', compact(['projects', 'donations']));
     }
 
     public function updateImage(){

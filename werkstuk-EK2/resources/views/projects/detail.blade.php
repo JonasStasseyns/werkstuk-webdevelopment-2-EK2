@@ -15,7 +15,11 @@
                     <div class="progress" style="width: {{$project->current/$project->target*100}}%;"><strong>{{round($project->current/$project->target*100)}}%</strong></div>
                 </div><br>
                 @if(Auth::user())
-                    <a href="/donate/{{$project->id}}"><button class="donate-submit">Donate</button></a>
+                    @if(Auth::user()->id != $project->user)
+                        <a href="/donate/{{$project->id}}"><button class="donate-submit">Donate</button></a>
+                    @else
+                        <a href=""><button class="donate-submit">This is your project</button></a>
+                    @endif
                 @else
                     <a href="/login"><button class="donate-submit">Log in to donate</button></a>
                 @endif

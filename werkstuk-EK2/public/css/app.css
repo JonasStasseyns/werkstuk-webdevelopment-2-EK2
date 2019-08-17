@@ -170,6 +170,8 @@
   background-color: #F0F1F5;
   padding: 1vw;
   margin: 1vh 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .proj-don-container {

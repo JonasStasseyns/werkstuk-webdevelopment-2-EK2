@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Donation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -25,6 +26,13 @@ class DonationsController extends Controller
             DB::table('projects')->where('id', $id)->update(['current' => $current]);
             $project->donated = true;
             $project->notenough = false;
+
+            $donation = new Donation;
+            $donation->user_id = Auth::user()->id;
+            $donation->credits = $amount;
+            $donation->project_id = $id;
+            $donation->save();
+
             return view('donate', compact('project'));
         }else{
             $project = DB::table('projects')->where('id', $id)->first();
