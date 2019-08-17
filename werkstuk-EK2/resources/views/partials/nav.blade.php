@@ -3,6 +3,7 @@
     <ul class="links">
         <li><a href="/">home</a></li>
         <li><a href="/projects">projects</a></li>
+        <li><a href="/news">news</a></li>
 
         <!-- If user is logged in show create projects link -->
         @if (Auth::check())

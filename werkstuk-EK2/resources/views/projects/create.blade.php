@@ -15,6 +15,17 @@
     <label for="title">Project title</label>
     <input class="create-project-input" type="text" name="title" placeholder="Project title" id="title">
 
+    <label for="category">Category</label>
+    <select class="create-project-select create-project-input" name="category">
+        <option value="arts">arts</option>
+        <option value="crafts">crafts</option>
+        <option value="film">film</option>
+        <option value="games">games</option>
+        <option value="music">music</option>
+        <option value="publishing">publishing</option>
+        <option value="tech">tech</option>
+    </select>
+
     <label for="title">Project target</label>
     <input class="create-project-input" type="number" name="target" placeholder="Project target" id="title">
 

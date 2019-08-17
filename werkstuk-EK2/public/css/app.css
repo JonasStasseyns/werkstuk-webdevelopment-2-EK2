@@ -129,6 +129,11 @@
   text-transform: uppercase;
 }
 
+.create-project-select {
+  height: 7vh;
+  background-color: white;
+}
+
 .form-control {
   width: 30%;
   margin: 0 auto;
@@ -304,7 +309,8 @@
 }
 
 .comment-line {
-  margin-bottom: 1vh;
+  margin: 1vh 0;
+  word-wrap: break-spaces;
 }
 
 .progress-parent {
@@ -391,6 +397,23 @@
 
 .news-comment-submit {
   width: 20%;
+}
+
+.datetime-news-comment {
+  font-size: 0.7em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-comment-username {
+  font-size: 1.2em;
+}
+
+.news-comment-line {
+  background-color: #F0F1F5;
+  margin: 0 0 2vh 0;
+  padding: 1vw;
+  font-size: 0.7em;
 }
 
 * {

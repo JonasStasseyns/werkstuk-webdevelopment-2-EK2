@@ -20,7 +20,8 @@
                 <br><br><h4>Log in to place comments</h4>
             @endif
             @foreach($comments as $comment)
-            <p class="comment-line"><span class="comment-username">{{$comment->username}}</span> {{$comment->comment}}</p>
+                <p class="datetime-news-comment"><span class="comment-username news-comment-username">{{$comment->username}}</span>{{$comment->created_at}}</p>
+                <p class="comment-line news-comment-line">{{$comment->comment}}</p>
             @endforeach
         </div>
     </div>

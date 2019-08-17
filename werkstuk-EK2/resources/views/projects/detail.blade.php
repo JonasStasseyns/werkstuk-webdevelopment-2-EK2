@@ -27,7 +27,7 @@
         </div>
     </div>
     <h2>Comments</h2>
-    <form action="/comment/project/{{$project->id}}" class="comment-form" method="post">
+    <form action="/comment/projects/{{$project->id}}" class="comment-form" method="post">
         {{csrf_field()}}
         <textarea class="comment-ta" name="comment" placeholder="Your comment..."></textarea>
         <input type="submit" class="comment-submit" value="Send">

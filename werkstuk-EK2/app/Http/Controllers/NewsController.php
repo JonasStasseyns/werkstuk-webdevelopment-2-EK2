@@ -19,7 +19,7 @@ class NewsController extends Controller
         $comments = DB::table('comments')->where([
             ['content_type', '=', 'news'],
             ['content_id', '=', $id],
-        ])->get();
+        ])->orderByDesc('id')->limit(6)->get();
 
         return view('news.detail', compact(['news', 'comments']));
     }

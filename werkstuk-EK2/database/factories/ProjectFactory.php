@@ -6,6 +6,7 @@ use App\Model;
 use Faker\Generator as Faker;
 
 $factory->define(App\Project::class, function (Faker $faker) {
+    $categories = ['arts', 'tech', 'film', 'crafts', 'games', 'music', 'publishing'];
     return [
         'title' => $faker->sentence(),
         'description' => $faker->paragraph(5, true),
@@ -14,5 +15,6 @@ $factory->define(App\Project::class, function (Faker $faker) {
         'user' => $faker->numberBetween(0, 1000),
         'current' => $faker->numberBetween(0, 1000),
         'target' => $faker->numberBetween(0, 1000),
+        'category' => $categories[rand(0, count($categories)-1)],
     ];
 });
