@@ -143,9 +143,27 @@
 .account-image {
   width: 15vw;
   height: 15vw;
-  border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.account-info-panel {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.update-acc-img-sub {
+  display: block;
+  margin-top: 1vh;
+}
+
+.user-name {
+  margin-bottom: 3vh;
+}
+
+.account-email-input {
+  width: 150%;
 }
 
 .purchase-credits-section {

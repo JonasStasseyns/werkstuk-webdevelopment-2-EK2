@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="dfa0d112-d036-4455-997d-c92a6d01cb8c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/ProjectsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/database/migrations/2019_08_16_180626_create_comments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/database/migrations/2019_08_16_180626_create_comments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/database/migrations/2019_08_15_122818_create_transactions_table.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/werkstuk-EK2/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_detail.sass" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_detail.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/partials/nav.sass" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/partials/nav.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/views/partials/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/views/partials/nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/views/projects/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/views/projects/detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_account.sass" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_account.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werkstuk-EK2/resources/views/account.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk-EK2/resources/views/account.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,11 +33,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/views/projects/detail.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="192">
               <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/views/account.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_account.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/views/projects/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="15" column="104" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="104" />
             </state>
           </provider>
         </entry>
@@ -50,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_detail.sass">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="386">
-              <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+              <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -77,19 +100,7 @@
         <entry file="file://$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/DonationsController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="271">
-              <caret line="14" column="50" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="14" selection-end-column="50" />
-              <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/ProjectsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="25" column="68" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+              <caret line="14" column="50" selection-start-line="11" selection-start-column="8" selection-end-line="14" selection-end-column="50" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -118,18 +129,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/werkstuk-EK2/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="43" column="78" selection-start-line="43" selection-start-column="78" selection-end-line="43" selection-end-column="78" />
-              <folding>
-                <element signature="e#7#389#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -152,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/werkstuk-EK2/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/auth.sass" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/Auth/LoginController.php" />
@@ -166,7 +164,6 @@
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/views/layout.blade.php" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/views/credits.blade.php" />
-        <option value="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_account.sass" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/database/migrations/2019_08_15_150501_create_messages_table.php" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/views/contact.blade.php" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_contact.sass" />
@@ -191,7 +188,6 @@
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/credits.sass" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/views/projects/index.blade.php" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/projectlist.sass" />
-        <option value="$PROJECT_DIR$/werkstuk-EK2/resources/views/account.blade.php" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_donate.sass" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/DonationsController.php" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/views/donate.blade.php" />
@@ -203,6 +199,9 @@
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/views/partials/nav.blade.php" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/sass/partials/nav.sass" />
         <option value="$PROJECT_DIR$/werkstuk-EK2/resources/views/projects/detail.blade.php" />
+        <option value="$PROJECT_DIR$/werkstuk-EK2/database/migrations/2019_08_17_104904_create_donations_table.php" />
+        <option value="$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_account.sass" />
+        <option value="$PROJECT_DIR$/werkstuk-EK2/resources/views/account.blade.php" />
       </list>
     </option>
   </component>
@@ -297,7 +296,7 @@
       <path value="$PROJECT_DIR$/werkstuk-EK2/vendor/theseer/tokenizer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="823" />
@@ -450,15 +449,15 @@
       <workItem from="1565812080824" duration="4000" />
       <workItem from="1565866446416" duration="14629000" />
       <workItem from="1565889220181" duration="2214000" />
-      <workItem from="1565954517297" duration="18142000" />
+      <workItem from="1565954517297" duration="20270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69269000" />
+    <option name="totallyTimeSpent" value="71397000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="823" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="823" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49810606" visible="true" weight="0.24749643" />
@@ -487,15 +486,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/storage/app/public/uploads/SSGgbrbnxmr6ruBmzFPqCPLp0tgIs7tYHNlETExA.png" />
-    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/storage/app/public/uploads/w8opymgN2N2ZjOnv9K260WjK3Q3DsBAoSpRUHzVV.png" />
-    <entry file="file:///Applications/MAMP/bin/php/php7.1.20/conf/php.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="480" column="25" lean-forward="true" selection-start-line="480" selection-start-column="25" selection-end-line="480" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/werkstuk-EK2/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -518,24 +508,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/views/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/werkstuk-EK2/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_account.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -721,13 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/views/account.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/projectlist.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
@@ -746,13 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/views/projects/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" column="95" selection-start-line="18" selection-start-column="95" selection-end-line="18" selection-end-column="95" />
         </state>
       </provider>
     </entry>
@@ -817,13 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_detail.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/sass/partials/nav.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -834,7 +789,7 @@
     <entry file="file://$PROJECT_DIR$/werkstuk-EK2/app/Http/Controllers/DonationsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
-          <caret line="14" column="50" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="14" selection-end-column="50" />
+          <caret line="14" column="50" selection-start-line="11" selection-start-column="8" selection-end-line="14" selection-end-column="50" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
@@ -848,10 +803,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/views/auth/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-792" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/views/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/database/migrations/2019_08_17_104904_create_donations_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_detail.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/views/projects/detail.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
+        <state relative-caret-position="192">
           <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/views/projects/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="15" column="104" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/sass/pages/_account.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/werkstuk-EK2/resources/views/account.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
         </state>
       </provider>
     </entry>
