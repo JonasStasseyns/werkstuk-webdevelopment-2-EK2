@@ -29,6 +29,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/account', 'AccountController@index');
 Route::post('/account', 'AccountController@updateImage');
+Route::post('/account/update', 'AccountController@updateEmail');
 
 Route::get('/about', 'ContentController@about');
 Route::get('/privacypolicy', 'ContentController@privacy');

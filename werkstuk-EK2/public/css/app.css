@@ -166,6 +166,22 @@
   width: 150%;
 }
 
+.your-project {
+  background-color: #F0F1F5;
+  padding: 1vw;
+  margin: 1vh 0;
+}
+
+.proj-don-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10vh;
+}
+
+.proj-don-container > div {
+  width: 45%;
+}
+
 .purchase-credits-section {
   width: 100%;
   display: flex;

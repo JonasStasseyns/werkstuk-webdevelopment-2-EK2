@@ -14,20 +14,35 @@
         <div class="account-info-text-container">
             <h2 class="user-name">{{auth()->user()->name}}</h2>
             <form method="post" action="/account/update">
+                {{csrf_field()}}
                 <input class="create-project-input account-email-input" type="text" name="email" placeholder="Your email" id="title" value="{{Auth::user()->email}}">
                 <input type="submit" value="Update" class="create-project-submit">
             </form>
         </div>
     </div>
-    <h2>Your projects</h2>
-    @foreach($projects as $project)
-        <div class="projects-list-card">
-            <img class="project-list-img" src="{{$project->image}}" alt="{{$project->image}}">
-            <h3 class="featured-title">{{$project->title}}</h3>
-            <p class="project-list-text">{{$project->description}}</p>
-            <a href=""><button class="featured-rm">Read More</button></a>
+
+    <div class="proj-don-container">
+        <div class="your-projects-list">
+            <h2>Your projects</h2>
+            @if(!$projects->isEmpty())
+                @foreach($projects as $project)
+                    <div class="your-project"><a href="/projects/{{$project->id}}">{{$project->title}}</a></div>
+                @endforeach
+            @else
+                <br><br><p>You don't have any projects.</p>
+            @endif
         </div>
-    @endforeach
+        <div class="your-donations-list">
+            <h2>Your donations</h2>
+            @if(!$projects->isEmpty())
+                @foreach($projects as $project)
+                    <div class="your-project"><a href="/projects/{{$project->id}}">{{$project->title}}</a></div>
+                @endforeach
+            @else
+                <br><br><p>You don't have any projects.</p>
+            @endif
+        </div>
+    </div>
     <script>
       document.getElementById("image").onchange = function() {
         document.getElementById("profile-form").submit();

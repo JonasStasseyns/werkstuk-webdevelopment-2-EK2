@@ -24,4 +24,12 @@ class AccountController extends Controller
 
         return redirect('/account');
     }
+
+    public function updateEmail(){
+        $email = request('email');
+        $user = Auth::user();
+        $user->email = $email;
+        $user->save();
+        return redirect('/account');
+    }
 }
