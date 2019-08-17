@@ -292,6 +292,7 @@
   background-color: #212F3C;
   color: #F0F1F5;
   font-size: 1em;
+  margin-bottom: 1vh;
 }
 
 .detail-content {
@@ -437,6 +438,10 @@
   margin: 0 0 2vh 0;
   padding: 1vw;
   font-size: 0.7em;
+}
+
+.edit-container {
+  width: 100%;
 }
 
 * {

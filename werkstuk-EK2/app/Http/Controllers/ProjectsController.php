@@ -49,9 +49,32 @@ class ProjectsController extends Controller
         return view('projects.index', compact(['projects', 'category']));
     }
 
+    public function edit($id){
+        $project = DB::table('projects')->where('id', $id)->first();
+        $editmode = true;
+        return view('projects.detail', compact(['project', 'editmode']));
+    }
+
+    public function update(){
+        $project = [
+            'title' => request('title'),
+            'description' => request('description'),
+            'content' => request('content'),
+            'category' => request('category'),
+            'target' => request('target'),
+        ];
+
+        if(request()->hasFile('image')){
+            $project['image'] = request()->image->store('uploads', 'public');
+        }
+
+        DB::table('projects')->where('id', request('id'))->update($project);
+
+        return redirect('/projects/'.request('id'));
+    }
+
     public function store()
     {
-
         $project = new Project;
         $project->title = request('title');
         $project->target = request('target');
@@ -62,9 +85,7 @@ class ProjectsController extends Controller
         $project->category = request('category');
         $project->save();
 
-
         return redirect('/projects');
-
     }
 
 }
