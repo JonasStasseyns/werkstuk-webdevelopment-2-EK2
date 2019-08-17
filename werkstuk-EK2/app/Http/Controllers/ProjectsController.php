@@ -10,13 +10,15 @@ class ProjectsController extends Controller
 {
     //
 
-    public function index() {
-         $projects = Project::paginate(9);
+    public function index()
+    {
+        $projects = Project::paginate(9);
 
-         return view('projects.index', compact('projects'));
+        return view('projects.index', compact('projects'));
     }
 
-    public function detail($id){
+    public function detail($id)
+    {
         $project = DB::table('projects')->where('id', $id)->first();
         $comments = DB::table('comments')->where([
             ['content_type', '=', 'project'],
@@ -26,19 +28,29 @@ class ProjectsController extends Controller
         return view('projects.detail', compact(['project', 'comments']));
     }
 
-    public function create() {
+    public function create()
+    {
 
         return view('projects.create');
 
     }
 
-    public function homepage() {
+    public function homepage()
+    {
         $projects = Project::limit(2)->get();
 
         return view('welcome', compact('projects'));
     }
 
-    public function store() {
+    public function category($cat)
+    {
+        $projects = DB::table('projects')->where('category', $cat)->paginate(9);
+        $category = $cat;
+        return view('projects.index', compact(['projects', 'category']));
+    }
+
+    public function store()
+    {
 
         $project = new Project;
         $project->title = request('title');

@@ -3,6 +3,7 @@
 @section('content')
     <div class="featured-container">
         <div class="featured-content">
+            <p class="cat-small">projects > {{$project->category}}</p>
             <h1 class="featured-title">{{$project->title}}</h1>
             <p class="featured-text detail-content">{!! $project->content !!}</p>
         </div>

@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-    <p class="bread"><a href="/news">news</a> > <a href="/news">index</a></p>
+    <h2 class="projects-title-index">News</h2><p><br></p>
     @foreach($news as $new)
         <div class="projects-list-card">
             {{--<img class="project-list-img" src="{{asset('storage/'.$project->image)}}" alt="{{$project->image}}">--}}

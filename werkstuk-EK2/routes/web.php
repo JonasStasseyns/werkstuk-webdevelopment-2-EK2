@@ -16,6 +16,7 @@ Route::get('/projects', 'ProjectsController@index');
 Route::get('/projects/{id}', ['uses' =>'ProjectsController@detail']);
 Route::get('/create-project', 'ProjectsController@create');
 Route::post('/projects/', 'ProjectsController@store');
+Route::get('/projects/category/{cat}', 'ProjectsController@category');
 Auth::routes();
 
 Route::get('/news', 'NewsController@index');

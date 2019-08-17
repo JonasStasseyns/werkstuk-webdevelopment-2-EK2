@@ -26,7 +26,7 @@
         <option value="tech">tech</option>
     </select>
 
-    <label for="title">Project target</label>
+    <label for="title">Project target (€)</label>
     <input class="create-project-input" type="number" name="target" placeholder="Project target" id="title">
 
     <label for="description">Short project description</label>

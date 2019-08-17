@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="contact-form-container">
+    <h2>Contact</h2><br><br>
     @if ($sent)
         <p class="sent-confirmation">Your message has been sent.</p>
     @endif

@@ -98,6 +98,29 @@
   margin-bottom: 1vh;
 }
 
+.categories-container {
+  padding: 1vw;
+  display: flex;
+  padding-right: 2.5vw;
+  margin-bottom: 5vh;
+  justify-content: space-between;
+}
+
+.project-category-button {
+  background-color: #212F3C;
+  color: #F0F1F5;
+  border: none;
+  padding: 0.5vw 4vw;
+}
+
+.projects-title-index {
+  margin-left: 1vw;
+}
+
+.cat-small {
+  font-variant-caps: all-small-caps;
+}
+
 .create-project-input {
   width: 50%;
   display: block;
