@@ -5,13 +5,9 @@
         <h2 class="projects-title-index">Projects
         </h2>
         <div class="categories-container">
-            <a href="/projects/category/arts"><button class="project-category-button">Arts</button></a>
-            <a href="/projects/category/crafts"><button class="project-category-button">Crafts</button></a>
-            <a href="/projects/category/publishing"><button class="project-category-button">Publishing</button></a>
-            <a href="/projects/category/music"><button class="project-category-button">Music</button></a>
-            <a href="/projects/category/film"><button class="project-category-button">Film</button></a>
-            <a href="/projects/category/games"><button class="project-category-button">Games</button></a>
-            <a href="/projects/category/tech"><button class="project-category-button">Tech</button></a>
+            @foreach($categories as $cat)
+                <a href="/projects/category/{{$cat->category}}"><button class="project-category-button">{{$cat->category}}</button></a>
+            @endforeach
         </div>
         @foreach($projects as $project)
             <div class="projects-list-card">

@@ -14,6 +14,9 @@
                 <input class="update-image-input" type="file" name="image" placeholder="change picture" id="image">
                 {{--<input class="create-project-submit update-acc-img-sub" type="submit" value="Update">--}}
             </form>
+            @if(Auth::user()->type=='admin')
+                <br><a href="/admin"><button class="create-project-submit">Manage Website</button></a>
+            @endif
         </div>
         <div class="account-info-text-container">
             <h2 class="user-name">{{auth()->user()->name}}</h2>

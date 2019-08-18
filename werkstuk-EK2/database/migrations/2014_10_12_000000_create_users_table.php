@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration
             $table->integer('credits')->default(0);
             $table->rememberToken();
             $table->timestamps();
+            $table->string('type')->default('user');
         });
     }
 

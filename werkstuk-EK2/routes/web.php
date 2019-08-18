@@ -50,3 +50,5 @@ Route::get('/donate/{id}/{amount}', ['uses' => 'DonationsController@donate'])->m
 Route::get('/projects/donations/{id}', ['uses' => 'DonationsController@donationList'])->middleware('auth');
 
 Route::post('/comment/{type}/{id}', ['uses' => 'CommentsController@comment'])->middleware('auth');
+
+Route::get('/admin', 'AdminController@index')->middleware('auth');

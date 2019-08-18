@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\Featured;
 use Illuminate\Http\Request;
 use App\Project;
@@ -14,8 +15,8 @@ class ProjectsController extends Controller
     public function index()
     {
         $projects = Project::paginate(9);
-
-        return view('projects.index', compact('projects'));
+        $categories = Category::all();
+        return view('projects.index', compact(['projects', 'categories']));
     }
 
     public function detail($id)
@@ -32,9 +33,8 @@ class ProjectsController extends Controller
 
     public function create()
     {
-
-        return view('projects.create');
-
+        $categories = Category::all();
+        return view('projects.create', compact('categories'));
     }
 
     public function homepage()
