@@ -9,12 +9,7 @@
         @if (Auth::check())
             <li><a href="/create-project">create project</a></li>
         @endif
-        <li class="nav-item">
-            <a class="nav-link" href="/contact">contact</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/about">about</a>
-        </li>
+
         @guest
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('login') }}">{{ __('login') }}</a>

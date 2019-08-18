@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Featured;
 use Illuminate\Http\Request;
 use App\Project;
 use Illuminate\Support\Facades\DB;
@@ -37,8 +38,7 @@ class ProjectsController extends Controller
 
     public function homepage()
     {
-        $projects = Project::limit(2)->get();
-
+        $projects = DB::table('featureds')->select('projects.id', 'projects.title', 'projects.description', 'projects.image')->join('projects', 'featureds.project_id', '=', 'projects.id')->get();
         return view('welcome', compact('projects'));
     }
 
@@ -65,7 +65,6 @@ class ProjectsController extends Controller
         ];
 
         if(request()->hasFile('image')){
-            dd('HASFILE YESS');
             $project['image'] = request()->image->store('uploads', 'public');
         }
 
@@ -84,9 +83,22 @@ class ProjectsController extends Controller
         $project->image = request()->image->store('uploads', 'public');
         $project->user = request('user');
         $project->category = request('category');
+        $project->deadline = request('deadline');
         $project->save();
 
         return redirect('/projects');
     }
 
+    public function featurizeIndex($id){
+        return view('projects.feature', compact('id'));
+    }
+
+    public function featurize(){
+        $featured = new Featured;
+        $featured->project_id = request('id');
+        $featured->duration = request('days');
+        $featured->paid_credits = 100*request('days');
+        $featured->save();
+        return redirect('/projects/'.request('id'));
+    }
 }

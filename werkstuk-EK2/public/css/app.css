@@ -341,6 +341,32 @@
   word-wrap: break-spaces;
 }
 
+@media screen and (max-width: 600px) {
+  .featured-container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .right {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .donate-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .account-image {
+    width: 100%;
+    min-height: 20vh;
+  }
+}
+
 .progress-parent {
   margin-top: 2vh;
   width: 100%;
@@ -448,6 +474,25 @@
   width: 100%;
 }
 
+.featured-price-calc {
+  width: 30%;
+  padding: 1vw;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #F0F1F5;
+}
+
+.featured-price-sub {
+  text-align: center;
+  width: 48%;
+}
+
+.feat-price {
+  color: #58D68D;
+  padding: 1vw 0 0 0;
+  font-size: 2em;
+}
+
 * {
   color: #212F3C;
   font-family: "Open Sans", sans-serif;
@@ -489,7 +534,8 @@ h2 {
 .general-footer {
   display: flex;
   width: 100%;
-  padding: 1vw;
+  padding: 1vw 20vw;
+  box-sizing: border-box;
   align-items: center;
   justify-content: space-around;
   background-color: white;

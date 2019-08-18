@@ -23,6 +23,7 @@ class CreateProjectsTable extends Migration
             $table->string('image');
             $table->integer('user');
             $table->integer('target');
+            $table->dateTime('deadline');
             $table->integer('current')->default(0);
         });
     }

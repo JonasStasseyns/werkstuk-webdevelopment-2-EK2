@@ -35,6 +35,9 @@
     <label for="description">Project description</label>
     <textarea class="create-project-textarea" name="content" placeholder="Description" id="description"></textarea>
 
+    <label for="datepicker">Deadline</label>
+    <input name="deadline" class="create-project-input date" type="text" id="datepicker" placeholder="dd-mm-yyyy">
+
     <label for="image">Project image</label>
     <input class="create-project-input" type="file" name="image" placeholder="project title" id="image">
 
@@ -42,5 +45,9 @@
     <input class="create-project-submit" type="submit" value="submit">
 
 </form>
-
+<script>
+  $("#datepicker").datepicker({
+    dateFormat: "yy-mm-dd"
+  });
+</script>
 @endsection

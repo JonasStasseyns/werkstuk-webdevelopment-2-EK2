@@ -19,6 +19,8 @@ Route::post('/projects/', 'ProjectsController@store');
 Route::get('/projects/category/{cat}', 'ProjectsController@category');
 Route::get('/projects/edit/{id}', 'ProjectsController@edit');
 Route::post('/projects/edit/update', 'ProjectsController@update');
+Route::get('/projects/featurize/{id}', 'ProjectsController@featurizeIndex');
+Route::post('/projects/featurize', 'ProjectsController@featurize');
 Auth::routes();
 
 Route::get('/news', 'NewsController@index');

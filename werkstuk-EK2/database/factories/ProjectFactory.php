@@ -15,6 +15,7 @@ $factory->define(App\Project::class, function (Faker $faker) {
         'user' => $faker->numberBetween(0, 1000),
         'current' => $faker->numberBetween(0, 1000),
         'target' => $faker->numberBetween(0, 1000),
+        'deadline' => $faker->dateTime(),
         'category' => $categories[rand(0, count($categories)-1)],
     ];
 });
