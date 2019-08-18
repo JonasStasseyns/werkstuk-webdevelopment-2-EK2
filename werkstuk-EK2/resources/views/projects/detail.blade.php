@@ -36,13 +36,9 @@
                 <label for="category">Category</label>
                 <select class="create-project-select create-project-input" name="category">
                     <option value="{{$project->category}}" selected>{{$project->category}}</option>
-                    <option value="arts">arts</option>
-                    <option value="crafts">crafts</option>
-                    <option value="film">film</option>
-                    <option value="games">games</option>
-                    <option value="music">music</option>
-                    <option value="publishing">publishing</option>
-                    <option value="tech">tech</option>
+                    @foreach($categories as $cat)
+                        <option value="{{$cat->category}}">{{$cat->category}}</option>
+                    @endforeach
                 </select>
 
                 <label for="title">Project target (€)</label>

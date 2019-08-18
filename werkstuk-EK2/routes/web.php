@@ -52,3 +52,4 @@ Route::get('/projects/donations/{id}', ['uses' => 'DonationsController@donationL
 Route::post('/comment/{type}/{id}', ['uses' => 'CommentsController@comment'])->middleware('auth');
 
 Route::get('/admin', 'AdminController@index')->middleware('auth');
+Route::get('/admin/categories/delete/{id}', 'AdminController@deleteCategory')->middleware('auth');

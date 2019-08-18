@@ -543,6 +543,26 @@ ul.pagination {
   box-sizing: border-box;
 }
 
+.admin-section {
+  width: 100%;
+  border: 1px solid #F0F1F5;
+  padding: 1vw 2vw;
+}
+
+.admin-cat-item {
+  display: block;
+  padding: 1vh 1vw;
+  background-color: #212F3C;
+  color: #F0F1F5;
+  margin: 1vh 0;
+  width: 20%;
+}
+
+.admin-cat-item-span {
+  color: red;
+  margin-right: 0.5vw;
+}
+
 * {
   color: #212F3C;
   font-family: "Open Sans", sans-serif;

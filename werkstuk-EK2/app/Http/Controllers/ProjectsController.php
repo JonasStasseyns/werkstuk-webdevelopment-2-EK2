@@ -53,7 +53,8 @@ class ProjectsController extends Controller
     public function edit($id){
         $project = DB::table('projects')->where('id', $id)->first();
         $editmode = true;
-        return view('projects.detail', compact(['project', 'editmode']));
+        $categories = Category::all();
+        return view('projects.detail', compact(['project', 'editmode', 'categories']));
     }
 
     public function update(){
