@@ -25,7 +25,7 @@ class ProjectsController extends Controller
     {
         $project = DB::table('projects')->where('id', $id)->first();
         $comments = DB::table('comments')->where([
-            ['content_type', '=', 'project'],
+            ['content_type', '=', 'projects'],
             ['content_id', '=', $id],
         ])->get();
         $duration = DB::table('featureds')->where('project_id', '=', $id)->first();

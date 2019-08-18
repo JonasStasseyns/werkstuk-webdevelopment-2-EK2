@@ -5,6 +5,10 @@
   margin: 0 1vw 5vh 1vw
   display: inline-block
   //background-color: #F0F1F5
+  @media screen and (max-width: 700px)
+    width: 47%
+  @media screen and (max-width: 500px)
+    width: 98%
 
 .project-list-img
   width: 100%
@@ -32,6 +36,7 @@
   padding-right: 2.5vw
   margin-bottom: 5vh
   justify-content: space-between
+  @media screen and (max-width: 500px)
 
 .project-category-button
   background-color: #212F3C
@@ -39,6 +44,10 @@
   border: none
   padding: 0.5vw 4vw
   text-transform: capitalize
+
+.categories-container a button
+  @media screen and (max-width: 500px)
+    padding: 3vh 4vw
 
 .projects-title-index
   margin-left: 1vw

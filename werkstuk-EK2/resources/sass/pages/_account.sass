@@ -6,8 +6,10 @@
 
 .account-info-panel
   display: flex
-  justify-content: space-between
   flex-direction: row-reverse
+  justify-content: space-between
+  @media screen and (max-width: 600px)
+    display: block
 
 .update-acc-img-sub
   display: block
@@ -18,8 +20,12 @@
 
 .account-email-input
   width: 150%
+  @media screen and (max-width: 600px)
+    width: 100%
 
 .your-projects-list
+  display: block
+  width: 100%
 
 .your-project
   background-color: #F0F1F5
@@ -32,6 +38,29 @@
   display: flex
   justify-content: space-between
   margin-top: 10vh
+  @media screen and (max-width: 600px)
+    display: block
 
 .proj-don-container > div
   width: 45%
+  @media screen and (max-width: 600px)
+    width: 100%
+    margin-bottom: 5vh
+
+.account-info-image-container
+  @media screen and (max-width: 600px)
+    width: 100%
+    display: block
+
+.account-info-text-container
+  @media screen and (max-width: 600px)
+    margin-top: 5vh
+    width: 100%
+    display: block
+
+.account-info-image-container .account-image
+  @media screen and (max-width: 600px)
+    border-radius: 50%
+    margin-left: 24vw
+    width: 50vw
+    height: 50vw
