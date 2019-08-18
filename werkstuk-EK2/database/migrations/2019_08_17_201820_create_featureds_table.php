@@ -17,8 +17,8 @@ class CreateFeaturedsTable extends Migration
             $table->bigIncrements('id');
             $table->timestamps();
             $table->integer('project_id');
-            $table->integer('duration');
-            $table->integer('paid_credits');
+            $table->integer('duration')->default(1);
+            $table->integer('paid_credits')->default(100);
         });
     }
 

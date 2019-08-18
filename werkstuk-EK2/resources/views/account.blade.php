@@ -17,6 +17,7 @@
             @if(Auth::user()->type=='admin')
                 <br><a href="/admin"><button class="create-project-submit">Manage Website</button></a>
             @endif
+            <a href="/credits"><button class="create-project-submit">Purchase credits</button></a>
         </div>
         <div class="account-info-text-container">
             <h2 class="user-name">{{auth()->user()->name}}</h2>

@@ -8,14 +8,25 @@ nav
   background-color: white
   border-radius: 1px
   box-shadow: 0 0 5px 0 rgba(0,0,0,0.3)
-  
+  @media screen and (max-width: 1000px)
+    display: block
+    text-align: center
+
   // Fixed
   position: fixed
   top: 0
+  @media screen and (max-width: 580px)
+    width: 50%
+    height: 100vh
+    padding-top: 2vh
+    display: none
+
 
 .logo
   //background-image: url('images/logo.svg')
   font-family: 'Open Sans', sans-serif
+  @media screen and (max-width: 1000px)
+    display: block
 
 .links
   font-variant-caps: small-caps
@@ -25,7 +36,39 @@ nav
   width: 50%
   align-items: center
   padding-bottom: 0.5vh
+  @media screen and (max-width: 1000px)
+    width: 100%
+    margin-top: 2vh
+
+.links li, links li a
+  @media screen and (max-width: 580px)
+    text-align: left
+    padding: 1vh 0 1vh 3vw
 
 .user-name-nav
   font-variant-caps: all-small-caps
   font-weight: bolder
+
+.menu-icon
+  background-image: url("../images/menu.svg")
+  background-color: white
+  width: 5vw
+  height: 5vw
+  margin: 4vw 2vw
+  z-index: 50
+  display: none
+  @media screen and (max-width: 580px)
+    display: block
+
+.logo-out-of-nav
+  position: absolute
+  width: 100%
+  left: 0
+  top: 0
+  padding: 2vh 0
+  text-align: center
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.3)
+  z-index: -50
+  display: none
+  @media screen and (max-width: 580px)
+    display: block

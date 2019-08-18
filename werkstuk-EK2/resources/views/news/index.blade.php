@@ -7,10 +7,8 @@
             {{--<img class="project-list-img" src="{{asset('storage/'.$project->image)}}" alt="{{$project->image}}">--}}
             <img class="project-list-img" src="{{$new->image}}" alt="{{$new->image}}">
             <h3 class="project-list-title">{{$new->title}}</h3>
-            <p class="project-list-text">{{$new->text}}</p>
-            <a href="">
-                <a href="/news/{{$new->id}}"><button class="featured-rm">Read More</button></a>
-            </a>
+            <p class="project-list-text">{!! $new->text !!}</p>
+            <a href="/news/{{$new->id}}"><button class="featured-rm">Read More</button></a>
 
         </div>
     @endforeach

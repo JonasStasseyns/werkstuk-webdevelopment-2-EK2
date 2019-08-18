@@ -1,3 +1,4 @@
+<div class="menu-icon"></div>
 <nav>
     <div class="logo"><a href="/"><h1>Project: <span class="logo-span">CrowdSupport</span></h1></a></div>
     <ul class="links">
@@ -35,3 +36,9 @@
         @endguest
     </ul>
 </nav>
+
+<script>
+    document.querySelector('.menu-icon').addEventListener('click', function(){
+      document.querySelector('nav').style.display = 'block';
+    });
+</script>

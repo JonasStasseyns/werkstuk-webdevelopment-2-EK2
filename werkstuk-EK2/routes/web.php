@@ -53,3 +53,6 @@ Route::post('/comment/{type}/{id}', ['uses' => 'CommentsController@comment'])->m
 
 Route::get('/admin', 'AdminController@index')->middleware('auth');
 Route::get('/admin/categories/delete/{id}', 'AdminController@deleteCategory')->middleware('auth');
+Route::post('/admin/categories/add/', 'AdminController@addCategory')->middleware('auth');
+
+Route::get('/projects/pdf/{id}', ['uses' => 'ProjectsController@pdf']);

@@ -17,4 +17,11 @@ class AdminController extends Controller
         DB::table('categories')->where('id', '=', $id)->delete();
         return redirect('/admin');
     }
+
+    public function addCategory(){
+        $cat = new Category;
+        $cat->category = request('category');
+        $cat->save();
+        return redirect('/admin');
+    }
 }

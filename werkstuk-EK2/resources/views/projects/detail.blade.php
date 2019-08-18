@@ -8,7 +8,7 @@
     <div class="featured-container">
         <div class="featured-content edit-container">
             <p class="cat-small">projects > {{$project->category}}</p>
-            @if(!empty($editmode) && Auth::user() && Auth::user()->id == $project->user)
+            @if(!empty($editmode) && Auth::user() && (Auth::user()->id == $project->user || Auth::user()->type =='admin'))
                 {{csrf_field()}}
                 <input type="hidden" name="id" value="{{$project->id}}">
                 <label>Project title
@@ -18,7 +18,7 @@
                 <h1 class="featured-title">{{$project->title}}</h1>
             @endif
 
-            @if(!empty($editmode) && Auth::user() && Auth::user()->id == $project->user)
+            @if(!empty($editmode) && Auth::user() && (Auth::user()->id == $project->user || Auth::user()->type =='admin'))
                 <label>Project short description
                     <textarea name="description" class="create-project-textarea">{{$project->description}}</textarea>
                 </label>
@@ -26,13 +26,13 @@
                 <p class="featured-text detail-content">{!! $project->content !!}</p>
             @endif
 
-            @if(!empty($editmode) && Auth::user() && Auth::user()->id == $project->user)
+            @if(!empty($editmode) && Auth::user() && (Auth::user()->id == $project->user || Auth::user()->type =='admin'))
                 <label>Project description
                     <textarea name="content" class="create-project-textarea">{{$project->content}}</textarea>
                 </label>
             @endif
 
-            @if(!empty($editmode) && Auth::user() && Auth::user()->id == $project->user)
+            @if(!empty($editmode) && Auth::user() && (Auth::user()->id == $project->user || Auth::user()->type =='admin'))
                 <label for="category">Category</label>
                 <select class="create-project-select create-project-input" name="category">
                     <option value="{{$project->category}}" selected>{{$project->category}}</option>
@@ -62,8 +62,13 @@
                 @if(Auth::user())
                     @if(Auth::user()->id != $project->user)
                         <a href="/donate/{{$project->id}}"><button class="donate-submit">Donate</button></a>
-                    @else
-                        <a href="/projects/edit/{{$project->id}}"><button class="donate-submit">Edit project</button></a>
+                        @if(Auth::user()->type == 'admin')
+                            <a href="/projects/edit/{{$project->id}}"><button class="donate-submit">Edit project</button></a>
+                        @endif
+                        @else
+                        @if(Auth::user()->id == $project->user)
+                            <a href="/projects/edit/{{$project->id}}"><button class="donate-submit">Edit project</button></a>
+                        @endif
                         <a href="/projects/donations/{{$project->id}}"><button class="donate-submit">Donation list</button></a>
                         @if(!empty($duration))
                             <a href="/projects/featurize/{{$project->id}}"><button class="donate-submit">Featured ({{$duration->duration}} days left)</button></a>
@@ -74,6 +79,7 @@
                 @else
                     <a href="/login"><button class="donate-submit">Log in to donate</button></a>
                 @endif
+                <a href="/projects/pdf/{{$project->id}}"><button class="donate-submit" onclick="this.innerHTML='Generating PDF...';">Download PDF</button></a>
             </div>
         </div>
     </div>

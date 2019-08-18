@@ -11,7 +11,8 @@
             <p class="featured-text">{{$project->description}}</p>
             <a href="/projects/{{$project->id}}"><button class="featured-rm">Read More</button></a>
         </div>
-        <img class="featured-img" src="{{$project->image}}">
+        {{--<img class="featured-img" src="{{$project->image}}">--}}
+        <img class="featured-img" src="storage/{{$project->image}}">
     </div>
 @endforeach
 

@@ -14,6 +14,7 @@
 </head>
 <body>
     @include('partials.nav')
+    <div class="logo-out-of-nav"><a href="/"><h1>Project: <span class="logo-span">CrowdSupport</span></h1></a></div>
     <div class="wrapper">
         <div class="section">
             @yield('content')

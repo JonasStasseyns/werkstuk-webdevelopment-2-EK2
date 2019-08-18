@@ -14,12 +14,18 @@
 
 .featured-img
   max-height: 35vh
+  object-fit: cover
+  @media screen and (max-width: 580px)
+    width: 100%
 
 .featured-text
   width: 90%
   max-height: 31vh
   overflow: hidden
   text-overflow: ellipsis
+  @media screen and (max-width: 580px)
+    width: 95%
+    text-align: justify
 
 .featured-rm
   margin: 1vh 0
@@ -28,6 +34,9 @@
   background-color: #212F3C
   border-radius: 0.2vw
   color: #F0F1F5
+  @media screen and (max-width: 580px)
+    padding: 2vw 3vw
+    border: none
 
 .featured-title
   margin-bottom: 1vh

@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Category;
 use App\Featured;
+use Barryvdh\DomPDF\Facade as PDF;
 use Illuminate\Http\Request;
 use App\Project;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class ProjectsController extends Controller
@@ -72,7 +74,7 @@ class ProjectsController extends Controller
 
         DB::table('projects')->where('id', request('id'))->update($project);
 
-//        return redirect('/projects/'.request('id'));
+        return redirect('/projects/'.request('id'));
     }
 
     public function store()
@@ -101,6 +103,15 @@ class ProjectsController extends Controller
         $featured->duration = request('days');
         $featured->paid_credits = 100*request('days');
         $featured->save();
+        Auth::user()->credits -= $featured->paid_credits;
+        Auth::user()->save();
         return redirect('/projects/'.request('id'));
+    }
+
+    public function pdf($id){
+        $project = DB::table('projects')->where('id', $id)->first();
+        $pdf = PDF::loadView('projects.pdf', compact('project'));
+
+        return $pdf->download(str_replace(' ', '_', $project->title).'.pdf');
     }
 }
