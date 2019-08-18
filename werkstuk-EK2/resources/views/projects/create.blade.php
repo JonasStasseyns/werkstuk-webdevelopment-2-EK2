@@ -39,7 +39,7 @@
     <input name="deadline" class="create-project-input date" type="text" id="datepicker" placeholder="dd-mm-yyyy">
 
     <label for="image">Project image</label>
-    <input class="create-project-input" type="file" name="image" placeholder="project title" id="image">
+    <input class="create-project-input" type="file" name="image" placeholder="project title" id="image" required>
 
 
     <input class="create-project-submit" type="submit" value="submit">

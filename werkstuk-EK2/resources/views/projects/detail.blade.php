@@ -67,10 +67,13 @@
                     @if(Auth::user()->id != $project->user)
                         <a href="/donate/{{$project->id}}"><button class="donate-submit">Donate</button></a>
                     @else
-                        <a href=""><button class="donate-submit">This is your project</button></a>
                         <a href="/projects/edit/{{$project->id}}"><button class="donate-submit">Edit project</button></a>
                         <a href="/projects/donations/{{$project->id}}"><button class="donate-submit">Donation list</button></a>
-                        <a href="/projects/featurize/{{$project->id}}"><button class="donate-submit">Make featured</button></a>
+                        @if(!empty($duration))
+                            <a href="/projects/featurize/{{$project->id}}"><button class="donate-submit">Featured ({{$duration->duration}} days left)</button></a>
+                        @else
+                            <a href="/projects/featurize/{{$project->id}}"><button class="donate-submit">Make featured</button></a>
+                        @endif
                     @endif
                 @else
                     <a href="/login"><button class="donate-submit">Log in to donate</button></a>

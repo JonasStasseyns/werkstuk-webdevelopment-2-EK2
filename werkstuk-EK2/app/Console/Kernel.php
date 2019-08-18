@@ -24,8 +24,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-//         $schedule->command('featured:recalculate')
-//                  ->daily();
+         $schedule->command('featured:recalculate')
+                  ->everyMinute();
     }
 
     /**

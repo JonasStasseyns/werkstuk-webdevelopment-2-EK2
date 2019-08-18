@@ -13,7 +13,7 @@ class AccountController extends Controller
 
         $projects = Project::all()->where('user', '=', Auth::user()->id);
         $donations = DB::table('donations')->select('projects.title', 'donations.credits', 'projects.id')->join('projects', 'projects.id', '=', 'donations.project_id')->where('user_id', '=', Auth::user()->id)->get();
-
+//        dd(Auth::user());
         return view('account', compact(['projects', 'donations']));
     }
 

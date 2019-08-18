@@ -3,7 +3,11 @@
 @section('content')
     <div class="account-info-panel">
         <div class="account-info-image-container">
-            <img class="account-image" src="{{asset('storage/'.auth()->user()->image)}}">
+            @if(empty(Auth::user()->image))
+                <img class="account-image" src="{{asset('storage/uploads/default.png')}}">
+            @else
+                <img class="account-image" src="{{asset('storage/'.auth()->user()->image)}}">
+            @endif
             {{--<img class="account-image" src="{{auth()->user()->image}}">--}}
             <form action="/account" method="post" enctype="multipart/form-data" id="profile-form">
                 {{csrf_field()}}

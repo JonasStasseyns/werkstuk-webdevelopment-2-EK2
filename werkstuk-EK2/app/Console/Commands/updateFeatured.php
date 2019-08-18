@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Featured;
 use Illuminate\Console\Command;
 
 class updateFeatured extends Command
@@ -39,5 +40,15 @@ class updateFeatured extends Command
     {
         //
         $this->info('BOLLETJE IS BEST WEL COOL JA WANT HALLO');
+        $featureds = Featured::all();
+        foreach ($featureds as $featured){
+            $this->info($featured);
+            $featured->duration -= 1;
+            $featured->save();
+            if($featured->duration <= 0){
+                $this->info('FINISHED');
+                $featured->delete();
+            }
+        }
     }
 }

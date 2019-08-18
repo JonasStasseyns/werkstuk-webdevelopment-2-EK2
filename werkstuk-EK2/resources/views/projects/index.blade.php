@@ -17,7 +17,7 @@
             <div class="projects-list-card">
                 {{--<img class="project-list-img" src="{{asset('storage/'.$project->image)}}" alt="{{$project->image}}">--}}
                 <a href="/projects/{{$project->id}}"><img class="project-list-img" src="{{$project->image}}" alt="{{$project->image}}"></a>
-                <p class="cat-small">projects > {{$project->category}}</p>
+                <p class="cat-small">projects › {{$project->category}}</p>
                 <h3 class="project-list-title">{{$project->title}}</h3>
                 <p class="percent-funded">{{round($project->current/$project->target*100)}}% funded</p>
                 <p class="project-list-text">{{$project->description}}</p>

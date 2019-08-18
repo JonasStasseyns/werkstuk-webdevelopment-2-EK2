@@ -14,13 +14,13 @@
 Route::get('/', 'ProjectsController@homepage');
 Route::get('/projects', 'ProjectsController@index');
 Route::get('/projects/{id}', ['uses' =>'ProjectsController@detail']);
-Route::get('/create-project', 'ProjectsController@create');
-Route::post('/projects/', 'ProjectsController@store');
+Route::get('/create-project', 'ProjectsController@create')->middleware('auth');
+Route::post('/projects/', 'ProjectsController@store')->middleware('auth');
 Route::get('/projects/category/{cat}', 'ProjectsController@category');
-Route::get('/projects/edit/{id}', 'ProjectsController@edit');
-Route::post('/projects/edit/update', 'ProjectsController@update');
-Route::get('/projects/featurize/{id}', 'ProjectsController@featurizeIndex');
-Route::post('/projects/featurize', 'ProjectsController@featurize');
+Route::get('/projects/edit/{id}', 'ProjectsController@edit')->middleware('auth');
+Route::post('/projects/edit/update', 'ProjectsController@update')->middleware('auth');
+Route::get('/projects/featurize/{id}', 'ProjectsController@featurizeIndex')->middleware('auth');
+Route::post('/projects/featurize', 'ProjectsController@featurize')->middleware('auth');
 Auth::routes();
 
 Route::get('/news', 'NewsController@index');
@@ -33,20 +33,20 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/account', 'AccountController@index');
-Route::post('/account', 'AccountController@updateImage');
-Route::post('/account/update', 'AccountController@updateEmail');
+Route::get('/account', 'AccountController@index')->middleware('auth');
+Route::post('/account', 'AccountController@updateImage')->middleware('auth');
+Route::post('/account/update', 'AccountController@updateEmail')->middleware('auth');
 
 Route::get('/about', 'ContentController@about');
 Route::get('/privacypolicy', 'ContentController@privacy');
 Route::get('/contact', function(){ return view('contact', ['sent' => false]); });
 Route::post('/contact', 'ContentController@contact');
 
-Route::get('/credits', 'CreditsController@index');
-Route::get('/credits/buy/{amount}', ['uses' =>'CreditsController@purchase']);
+Route::get('/credits', 'CreditsController@index')->middleware('auth');
+Route::get('/credits/buy/{amount}', ['uses' =>'CreditsController@purchase'])->middleware('auth');
 
-Route::get('/donate/{id}', ['uses' => 'DonationsController@index']);
-Route::get('/donate/{id}/{amount}', ['uses' => 'DonationsController@donate']);
-Route::get('/projects/donations/{id}', ['uses' => 'DonationsController@donationList']);
+Route::get('/donate/{id}', ['uses' => 'DonationsController@index'])->middleware('auth');
+Route::get('/donate/{id}/{amount}', ['uses' => 'DonationsController@donate'])->middleware('auth');
+Route::get('/projects/donations/{id}', ['uses' => 'DonationsController@donationList'])->middleware('auth');
 
-Route::post('/comment/{type}/{id}', ['uses' => 'CommentsController@comment']);
+Route::post('/comment/{type}/{id}', ['uses' => 'CommentsController@comment'])->middleware('auth');

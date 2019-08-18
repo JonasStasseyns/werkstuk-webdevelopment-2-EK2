@@ -25,8 +25,9 @@ class ProjectsController extends Controller
             ['content_type', '=', 'project'],
             ['content_id', '=', $id],
         ])->get();
+        $duration = DB::table('featureds')->where('project_id', '=', $id)->first();
 
-        return view('projects.detail', compact(['project', 'comments']));
+        return view('projects.detail', compact(['project', 'comments', 'duration']));
     }
 
     public function create()
@@ -86,7 +87,7 @@ class ProjectsController extends Controller
         $project->deadline = request('deadline');
         $project->save();
 
-        return redirect('/projects');
+        return redirect('/projects/'.$project->id);
     }
 
     public function featurizeIndex($id){

@@ -20,6 +20,7 @@
         </div>
     </div>
 <footer class="general-footer">
+    <p>Project: CrowdSupport &copy; 2019</p>
     <a href="/privacypolicy">Privacy Policy</a>
     <li class="nav-item">
         <a class="nav-link" href="/about">About</a>
