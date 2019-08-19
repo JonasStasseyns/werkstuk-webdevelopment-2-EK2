@@ -85,6 +85,7 @@ class ProjectsController extends Controller
         $project->description = request('description');
         $project->content = request('content');
         $project->image = request()->image->store('uploads', 'public');
+        $project->image = '/storage/'.$project->image;
         $project->user = request('user');
         $project->category = request('category');
         $project->deadline = request('deadline');

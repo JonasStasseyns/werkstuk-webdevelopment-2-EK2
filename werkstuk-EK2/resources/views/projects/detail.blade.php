@@ -52,8 +52,8 @@
 
         </div>
         <div class="right">
-            {{--<img class="featured-img" src="{{$project->image}}">--}}
-            <img class="account-image" src="{{asset('storage/'.$project->image)}}">
+            <img class="featured-img" src="{{$project->image}}">
+{{--            <img class="account-image" src="{{asset('storage/'.$project->image)}}">--}}
             <div class="donate-container">
                 <h3>Donate to this project</h3>
                 <div class="progress-parent">
