@@ -69,6 +69,7 @@
 }
 
 .menu-icon {
+  background-image: url(/images/menu.svg?51f8f52c0d18c6d30b3c6e40b0d3e4a3);
   background-color: white;
   width: 5vw;
   height: 5vw;
